@@ -1,0 +1,103 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Optional: center vertically */
+  min-height: 100vh;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* This centers all notes */
+.notesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* This styles each note card */
+.noteCard {
+  background-color: #fff;
+  padding: 15px 20px;
+  max-width: 300px;
+  min-width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* App.css */
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .noteCard {
+    width: 90%;
+    margin: auto;
+  }
+
+  .noteCard button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .noteCard h3 {
+    font-size: 18px;
+  }
+
+  .noteCard p {
+    font-size: 16px;
+  }
+}
+
+
